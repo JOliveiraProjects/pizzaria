@@ -1,0 +1,32 @@
+version: '3.4'
+
+services:
+  pizzaria.service1.api:
+    image: ${DOCKER_REGISTRY}sqitservice1api
+    container_name: pizzaria-service1-api
+    expose:
+      - 80
+    ports:
+      - 5051:80
+    build:
+      context: .
+      dockerfile: Sqit.Service1.Api/Dockerfile
+
+  pizzaria.service2.api:
+    image: ${DOCKER_REGISTRY}sqitservice2api
+    container_name: pizzaria-service2-api
+    expose:
+      - 80
+    ports:
+      - 5052:80
+    build:
+      context: .
+      dockerfile: Sqit.Service2.Api/Dockerfile
+
+  pizzaria.gateway:
+    image: ${DOCKER_REGISTRY}pizzariagateway
+    container_name: pizzaria-gateway
+    build:
+      context: .
+      dockerfile: Pizzaria.Gateway/Dockerfile
+

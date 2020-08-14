@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30309.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BBC5CB4F-DC29-40D3-92EE-F32D93AED40F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5DFA51CC-9678-40E0-AFCB-7AF5F375E1B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "customer-api", "customer-api", "{C6A93F1B-B084-4EB0-8C0E-B98E3C6AA6E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "order-api", "order-api", "{74B185A3-AE79-4516-AE9F-0A2292973275}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzaria.Gateway", "Pizzaria.Gateway\Pizzaria.Gateway.csproj", "{0D866777-A7EA-4FCA-AB53-73811E54639E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzaria.OrderApi", "Services\order-api\Pizzaria.OrderApi.csproj", "{457A0315-4F54-44EB-8E66-D14E3B62D072}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzaria.CustomerApi", "Services\customer-api\Pizzaria.CustomerApi.csproj", "{D60865A1-684E-4468-9ECF-BF08AE429C24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBC5CB4F-DC29-40D3-92EE-F32D93AED40F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC5CB4F-DC29-40D3-92EE-F32D93AED40F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC5CB4F-DC29-40D3-92EE-F32D93AED40F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC5CB4F-DC29-40D3-92EE-F32D93AED40F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D866777-A7EA-4FCA-AB53-73811E54639E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D866777-A7EA-4FCA-AB53-73811E54639E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D866777-A7EA-4FCA-AB53-73811E54639E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D866777-A7EA-4FCA-AB53-73811E54639E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{457A0315-4F54-44EB-8E66-D14E3B62D072}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{457A0315-4F54-44EB-8E66-D14E3B62D072}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{457A0315-4F54-44EB-8E66-D14E3B62D072}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{457A0315-4F54-44EB-8E66-D14E3B62D072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D60865A1-684E-4468-9ECF-BF08AE429C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60865A1-684E-4468-9ECF-BF08AE429C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60865A1-684E-4468-9ECF-BF08AE429C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60865A1-684E-4468-9ECF-BF08AE429C24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6A93F1B-B084-4EB0-8C0E-B98E3C6AA6E5} = {5DFA51CC-9678-40E0-AFCB-7AF5F375E1B4}
+		{74B185A3-AE79-4516-AE9F-0A2292973275} = {5DFA51CC-9678-40E0-AFCB-7AF5F375E1B4}
+		{457A0315-4F54-44EB-8E66-D14E3B62D072} = {74B185A3-AE79-4516-AE9F-0A2292973275}
+		{D60865A1-684E-4468-9ECF-BF08AE429C24} = {C6A93F1B-B084-4EB0-8C0E-B98E3C6AA6E5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52282297-7EE9-47F7-B05B-FF27EB9B5A7D}
+	EndGlobalSection
+EndGlobal
